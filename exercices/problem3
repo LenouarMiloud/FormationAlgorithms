@@ -1,0 +1,15 @@
+Exercice 3:
+Check whether user entered character is vowel or consonant
+
+Algorithme exo3;
+Var
+ch:character; / char
+
+Debut
+lire(ch);
+si((ch='a') ou (ch='e') ou (ch='i') ou (ch='o') ou (ch='u')) alors
+    ecrire("le character",ch," est vowel");
+sinon
+    ecrire("le character",ch," est consonant");
+
+Fin.

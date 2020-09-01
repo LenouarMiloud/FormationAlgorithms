@@ -1,0 +1,14 @@
+Exercice 2
+Find the maximum number among given three numbers
+
+Algorithme exo2;
+var
+nb1,nb2,nb3:entier;
+Debut
+si ((nb1>nb2) ET (nb1>nb3)) alors
+    ecrire(nb1,"is the bigest one");
+sinon si ((nb2>nb1) ET (nb2>nb3)) alors
+    ecrire(nb2,"is the bigest one");
+sinon
+    ecrire(nb3,"is the bigest one");
+Fin.

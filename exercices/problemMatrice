@@ -20,14 +20,14 @@ ffp;
 
 pour i<- 1 jusqua 2 faire
     pour j<- 1 jusqua 3 faire
-        lire(A[i][j]);
+        lire(B[i][j]);
     ffp;
 ffp;
 
 pour i<- 1 jusqua 4 faire
     pour j<- 1 jusqua 3 faire
         pour k<- 1 jusqua 4 faire
-            sum<- sum + A[i][k] + B[k][j];
+            sum<- sum + A[i][k] * B[k][j];
         ffp;
         C[i][j]<- sum;
     ffp;

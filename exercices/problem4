@@ -1,0 +1,56 @@
+Exercice 4:
+Perform arithmetic operations(+,-,*,and/) on given two numbers.
+Ask user which operation to perform.
+
+Algorithme exo4;
+var
+result:reel;
+number1,number2:entier; //integer
+operation:character; // char
+debut
+lire(number1,number2);
+lire(operation);
+
+si (operation = '+') alors
+    result = number1 + number2 ;
+sinon si (operation = '-') alors
+    result = number1 - number2 ;
+sinon si (operation = '*') alors
+    result = number1 * number2 ;
+sinon si (operation = '/') alors
+    result = number1 / number2 ;
+
+ecrire(number1,"",operation,"",number2,"=",result);
+
+selon(operation) faire
+
+fin.
+
+Algorithme exo4;
+var
+result:reel;
+number1,number2:entier; //integer
+operation:character; // char
+debut
+lire(number1,number2);
+lire(operation);
+
+selon(operation)
++:
+    result<-number1+number2;
+    break;
+-:
+    result<-number1-number2;
+    break;
+*:
+    result<-number1*number2;
+    break;
+/:
+    result<-number1/number2;
+    break;
+
+ecrire(number1,"",operation,"",number2,"=",result);
+
+Fin.
+
+

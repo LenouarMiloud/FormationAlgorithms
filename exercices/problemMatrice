@@ -1,0 +1,42 @@
+exercice
+ecrire un Algorithme qui demande de remplire
+deux matrices A de 4 x 2 reels et B de 2 x 3 reel
+et calcule le produit matriciel dans une troisieme
+matrice C dont il affiche le contenu a la fin .
+
+Algorithme exoMatrice;
+var
+A: Tableau de 4*2 entier;
+B: Tableau de 2*3 entier;
+C: Tableau de 4*3 entier;
+i,j,k,sum: entier;
+
+Debut
+pour i<- 1 jusqua 4 faire
+    pour j<- 1 jusqua 2 faire
+        lire(A[i][j]);
+    ffp;
+ffp;
+
+pour i<- 1 jusqua 2 faire
+    pour j<- 1 jusqua 3 faire
+        lire(A[i][j]);
+    ffp;
+ffp;
+
+pour i<- 1 jusqua 4 faire
+    pour j<- 1 jusqua 3 faire
+        pour k<- 1 jusqua 4 faire
+            sum<- sum + A[i][k] + B[k][j];
+        ffp;
+        C[i][j]<- sum;
+    ffp;
+ffp;
+
+pour i<- 1 jusqua 4 faire 
+    pour j<- 1 jusqua 3 faire 
+        ecrire(C[i][j]);
+    ffp;
+ffp;
+
+Fin.

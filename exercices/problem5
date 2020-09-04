@@ -1,0 +1,23 @@
+Check whether given character is in upper case or lower case.
+Create an User-Defined function for the same .
+
+Algorithme exo5;
+const
+Var
+ch:character;
+
+procedure cheq(valeur:character)
+debut
+	si((valeur >= 65) ET (valeur <= 90)) alors
+		ecrire(valeur,"is an Upper-case");
+	sinon si ((valeur >= 97) ET (valeur <= 122)) alors
+		ecrire(valeur,"is an Lower-case");
+	sinon
+		ecrire(valeur," is not an alphabet character");
+fin;
+
+Debut
+lire(ch);
+cheq(ch);
+Fin.
+

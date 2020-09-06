@@ -1,0 +1,37 @@
+Algorithme TestMatrice;
+Const
+N=25; M=5;
+Var
+Mat: tableau de NxM de reel;
+i,j:entier;
+max:reel;
+
+Debut
+pour i<- 1 jusqua N faire
+	pour j<-1 jusqua M faire 
+		lire(Mat[i][j]);
+	ffp;
+ffp;
+
+
+max<-Mat[1][1];
+i<-1; j<-2;
+Tanque((i<N) ET (estDecroissant = vrai)) faire
+	Tanque (j<M) faire
+		Si(Mat[i][j] > max) alors
+			estDecroissant = faux;
+		fsi;
+		max<-Mat[i][j];
+		j<j+1;	
+	fftq;
+	i<-i+1;
+	j<-1;
+fftq;
+
+si(estDecroissant = vrai)alors
+	ecrire("la matrice est ordone dans l'ordre decroissant")
+sinon
+	ecrire("la matrice n'est pas ordone dans l'ordre decroissant")
+fsi;
+
+Fin.

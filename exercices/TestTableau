@@ -1,0 +1,25 @@
+Algorithme TestTableau;
+Const
+N=25;
+Var
+T:tableau[1..N] de reel;
+estCroissant: booleen;
+
+Debut
+
+lire(T[1]);
+min<-T[1];
+estCroissant<-vrai;
+pour i<-2 jusqua N faire
+	lire(T[i]);
+	si (T[i]<min) alors
+		estCroissant<- faux; 
+ffp;
+
+si (estCroissant = vrai) alors
+	ecrire("Le tableau est trie dans l'ordre coissant ");
+sinon
+	ecrire("Le tableau n'est pas trie dans l'ordre coissant ");	
+
+
+Fin.

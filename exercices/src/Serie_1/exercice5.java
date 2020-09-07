@@ -1,3 +1,5 @@
+package Serie_1;
+
 import java.util.Scanner;
 
 public class exercice5 {

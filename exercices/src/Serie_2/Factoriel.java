@@ -1,3 +1,5 @@
+package Serie_2;
+
 import java.util.Scanner;
 
 public class Factoriel {

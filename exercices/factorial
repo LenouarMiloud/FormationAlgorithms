@@ -1,0 +1,12 @@
+Algorithme fact;
+Var
+N,fact,i:entier;
+
+Debut
+lire(N);
+fact<-1;
+pour i<- 2 jusqua N faire
+	fact<-fact x i;
+ffp;
+
+Fin.

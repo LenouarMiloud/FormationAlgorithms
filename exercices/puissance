@@ -1,0 +1,17 @@
+Algorithme base;
+Var
+B,base:reel;
+P,i:entier;
+
+Debut
+lire(B);
+lire(P);
+
+base<-B;
+pour i<-1 jusqua P faire
+	base <- base x B;
+ffp;
+
+ecrire(base);
+
+Fin.

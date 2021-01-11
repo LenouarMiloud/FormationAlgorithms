@@ -1,0 +1,27 @@
+Algorithme student_mark;
+const
+student_number = 30;
+var
+Array_student: tableau [1..student_number] de reel;
+i: entier;
+goodMark: reel;
+Debut
+	pour i<- 1 jusqua student_number faire
+		repeter 
+			ecrire("enter mark : ");
+			lire(Array_student[i]);
+		jusqua((Array_student[i]>=0)ET(Array_student[i]<=20))	
+	ffpour;
+
+goodMark <- Array_student[1];
+
+pour i<- 2 jusqua student_number faire
+	si (Array_student[i] > goodMark ) alors
+		goodMark <- Array_student[i];
+	fsi;
+ffpour;
+
+ecrire("La meilleure note est : ",goodMark);
+
+Fin.
+

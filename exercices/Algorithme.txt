@@ -3,8 +3,10 @@ const
 student_number = 30;
 var
 Array_student: tableau [1..student_number] de reel;
-i: entier;
-goodMark: reel;
+i,studentsGoodMark,MarklessGoodNumber: entier;
+goodMark,MarkLessGood: reel;
+
+
 Debut
 	pour i<- 1 jusqua student_number faire
 		repeter 
@@ -15,6 +17,8 @@ Debut
 
 goodMark <- Array_student[1];
 
+studentsGoodMark <- 0;
+
 pour i<- 2 jusqua student_number faire
 	si (Array_student[i] > goodMark ) alors
 		goodMark <- Array_student[i];
@@ -22,6 +26,23 @@ pour i<- 2 jusqua student_number faire
 ffpour;
 
 ecrire("La meilleure note est : ",goodMark);
+
+pour i<-1 jusqua student_number faire
+	si (Array_student[i] == goodMark) alors
+		studentsGoodMark <- studentsGoodMark + 1 ;
+	fsi;	
+ffpour;
+
+ecrire("Le nombre d'etudiants ayant la meilleure note sont: ",studentsGoodMark);
+
+pour i<- 1 jusqua student_number faire
+	si(Array_student[i] < goodMark )faire
+		MarkLessGood <- Array_student[i];
+		MarklessGoodNumber < - MarklessGoodNumber + 1 ;
+	fsi;
+ffpour;
+
+ecrire("la moyenne des notes strictement inferieur a la meilleur note est: ", MarkLessGood / MarkLessGoodNumber );
 
 Fin.
 
